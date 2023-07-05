@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Tugas</title>
+    <link rel="icon" type="Image/x-icon" href="logo onk bulet.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/b4775b7ab8.js" crossorigin="anonymous"></script>
+    <style>
+        #h1 {
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+        }
+        #h2 {
+            text-align: left;
+            padding: 1px;
+            margin: 10px;
+        }
+        #paragraf {
+            text-align: justify;
+            padding: 1px;
+            margin: 10px;
+        }
+        
+        textarea {
+            resize: none;
+        }
+
+        #table1 {
+            font-family: sans-serif;
+            border: solid 3px;
+            color: black;
+        }
+        #table1 td {
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+        #table1 tr {
+            background-color: white;
+            color: black;
+        }
+        #table1 tr:hover {
+            background-color: yellow;
+            color: black;
+        }
+        #table1 th {
+            border: solid 1px;
+            color: azure;
+            padding: 10px;
+            color: black;
+            background-color: gray;
+            text-align: center;
+            font-size: 12px;
+        }
+        #tableform {
+            font-family: sans-serif;
+            border-collapse: collapse;
+        }
+        #tableform td {
+            border: solid px;
+            color: black;
+            padding: 10px;
+            font-size: 12px;
+            text-align: left;
+        }
+        #tableform th {
+            border: solid 1px;
+            color: azure;
+            padding: 10px;
+            color: black;
+            background-color: gray;
+            text-align: center;
+            font-size: 12px;
+        }
+        
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h1 id="h1">MyZoneSensei</h1>
+            <h2 id="h2">Table Tugas</h2>
+            <p id="paragraf">Latihan bikin web form artikel</p>
+        </header>
+        <main>
+            <table id="tableform" width="100%">
+                <tr>
+                    <td width="30%">
+                        <form>
+                            <div class="form-group row">
+                                <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="nama" id="nama" placeholder="nama" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="birthday" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                                <div class="col-sm-10">
+                                    <input type="date" class="form-control" name="birthday" id="birthday" placeholder="Tanggal Lahir" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="ir_id0" value="1" checked>
+                                        <label class="form-check-label" for="ir_id0">Laki-Laki</label>
+                                    </div> 
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="ir_id1" value="2" checked>
+                                        <label class="form-check-label" for="ir_id2">Perempuan</label>
+                                    </div> 
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="3" name="deskripsi" id="deskripsi" placeholder="deskripsi"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="submit" class="col-sm-2 col-form-label"></label>
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary btn-block" name="submit" id="submit">Kirim</button>
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                    <td width="100%">
+                        <table id="table1">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nama</th>
+                                    <th scope="col">Tanggal Lahir</th>
+                                    <th scope="col">Jenis Kelamin</th>
+                                    <th scope="col">Deskripsi</th>
+                                    <th scope="col">Instagram</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dzikri Ahmad Fauzi</td>
+                                    <td>September 17, 2005</td>
+                                    <td>Laki-Laki</td>
+                                    <td>Lagi belajar coding</td>
+                                    <td><a href="https://www.instagram.com/dzikriahmadfauzi._">@dzikriahmadfauzi._</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Hanan Arya</td>
+                                    <td>Januari 1, 2005</td>
+                                    <td>Laki-Laki</td>
+                                    <td>Do'ain masuk UNS bang</td>
+                                    <td><a href="https://www.instagram.com/muhammadhananarya_">@muhammadhananarya_</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Ahmad Gernando</td>
+                                    <td>Agustus 17, 1945</td>
+                                    <td>Laki-Laki</td>
+                                    <td>Lagi Skripsian</td>
+                                    <td><a href="https://www.instagram.com/gernando__">@gernando__</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Ahmad Reza</td>
+                                    <td>April 12, 2004</td>
+                                    <td>Laki-Laki</td>
+                                    <td>Banyak kerjaan</td>
+                                    <td><a href="https://www.instagram.com/rezaxty_">@rezaxty_</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </article>
+</body>
+</html>
